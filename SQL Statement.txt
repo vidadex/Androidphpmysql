@@ -1,0 +1,38 @@
+CREATE DATABASE `androidbash_movies2017_db`;
+
+USE `androidbash_movies2017_db`;
+
+
+CREATE TABLE IF NOT EXISTS `movies_table` (
+  `id` int(15) NOT NULL AUTO_INCREMENT,
+  `movie_name` varchar(45) NOT NULL,
+  `movie_image` varchar(10000) NOT NULL,
+  `movie_genre` varchar(40) NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
+--
+-- Dumping data for table `movies_table`
+--
+
+INSERT INTO `movies_table` (`id`, `movie_name`, `movie_image`, `movie_genre`) VALUES
+(1, 'Avatar 2', 'http://androidbash.com/androidtutorials/androidbashphpmysql/Avatar2.jpg', 'Sci-Fi'),
+(2, 'Transformers', 'http://androidbash.com/androidtutorials/androidbashphpmysql/Transformers.jpg', 'Action, Sci-Fi'),
+(3, 'Fifty Shades Darker', 'http://androidbash.com/androidtutorials/androidbashphpmysql/FiftyShadesDarker.jpg', 'Romance'),
+(4, 'Spiderman Homecoming', 'http://androidbash.com/androidtutorials/androidbashphpmysql/SpidermanHomecoming.jpg', 'Action'),
+(5, 'Wonder Woman', 'http://androidbash.com/androidtutorials/androidbashphpmysql/WonderWoman.jpg', 'Action'),
+(6, 'Underworld', 'http://androidbash.com/androidtutorials/androidbashphpmysql/Underworld.jpg', 'Action, Sci-Fi'),
+(7, 'World War Z 2', 'http://androidbash.com/androidtutorials/androidbashphpmysql/WorldWarZ2.jpg', 'Action, Horror, Sci-Fi'),
+(8, 'Thor Ragnorak', 'http://androidbash.com/androidtutorials/androidbashphpmysql/ThorRagnorak.jpg', 'Action'),
+(9, 'Smurfs', 'http://androidbash.com/androidtutorials/androidbashphpmysql/Smurfs.jpg', 'Animated'),
+(10, 'Power Rangers', 'http://androidbash.com/androidtutorials/androidbashphpmysql/PowerRangers.jpg', 'Action'),
+(11, 'Pirates of the Caribbean', 'http://androidbash.com/androidtutorials/androidbashphpmysql/Pirates.jpg', 'Adeventure'),
+(12, 'Maze Runner Death Cure', 'http://androidbash.com/androidtutorials/androidbashphpmysql/MazeRunnerDeathCure.jpg', 'Action, Sci-Fi, Thriller'),
+(13, 'Logan', 'http://androidbash.com/androidtutorials/androidbashphpmysql/Logan.jpg', 'Action, Sci-Fi '),
+(14, 'Beauty and the Beast', 'http://androidbash.com/androidtutorials/androidbashphpmysql/BeautyAndTheBeast.jpg', 'Fantasy, Musical, Romance'),
+(15, 'Jeepers Creepers 3', 'http://androidbash.com/androidtutorials/androidbashphpmysql/JeepersCreepers3.jpg', 'Horror, Mystery'),
+(16, 'Despicable Me 3', 'http://androidbash.com/androidtutorials/androidbashphpmysql/DespicableMe3.jpg', 'Comedy, Animated'),
+(17, 'Justice League', 'http://androidbash.com/androidtutorials/androidbashphpmysql/JusticeLeague.png', 'Action'),
+(18, 'Alien', 'http://androidbash.com/androidtutorials/androidbashphpmysql/Alien.png', 'Sci-Fi'),
+(19, 'Fast And Furious', 'http://androidbash.com/androidtutorials/androidbashphpmysql/FastAndFurious.jpg', 'Action, Crime, Thriller'),
+(20, 'Pirates', 'http://androidbash.com/androidtutorials/androidbashphpmysql/Pirates.jpg', 'Action');
